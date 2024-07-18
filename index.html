@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Academy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #hero-section {
+            background: url("pic.avif") no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+            position: relative;
+            margin-top: 56px;
+            /* Adjust this value if the height of your navbar changes */
+        }
+
+        #hero-section h1,
+        #hero-section p {
+            color: rgb(11, 4, 81);
+        }
+
+
+        .course-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #d3d3d3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <a class="navbar-brand text-white">WebDev Academy</a>      
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero-section" class="hero-section">
+        <h1>Welcome to WebDev Academy</h1>
+        <p>Your ultimate destination for mastering web development.</p>
+        <a href="#courses" class="btn btn-primary">Get Started</a>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container mt-5">
+        <h2 class="text-center">Our Courses</h2>
+        <div class="accordion" id="courseAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link course-button" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <a href="https://www.w3schools.com/html/html_css.asp" class="btn btn-primary"> HTML &
+                                CSS</a>
+                        </button>
+                    </h2>
+                </div>
+
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#courseAccordion">
+                    <div class="card-body">
+                        Learn the basics of web development with HTML and CSS.
+                    </div>
+                </div>
+            </div>
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link course-button" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                            class="btn btn-primary"> BOOTSTRAP</a>
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#courseAccordion">
+                <div class="card-body">
+                    Learn the basics of web development with BOOTSTRAP.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link course-button" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <a href="https://www.javascript.com/" class="btn btn-primary"> JavaScript</a>
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#courseAccordion">
+                <div class="card-body">
+                    Learn the basics of web development with JAVASCRIPT.
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">At WebDev Academy, our mission is to empower aspiring web developers with the skills they
+            need to succeed in the digital world.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pic1.webp" class="card-img-top" alt="Team Member">
+                    <div class="card-body">
+                        <h5 class="card-title">Alis</h5>
+                        <p class="card-text">Lead Instructor</p>
+                        <a href="#" class="btn btn-primary">Connect</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pic2.webp" class="card-img-top" alt="Team Member">
+                    <div class="card-body">
+                        <h5 class="card-title">Raza</h5>
+                        <p class="card-text">Curriculum Developer</p>
+                        <a href="#" class="btn btn-primary">Connect</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pic3.webp" class="card-img-top" alt="Team Member">
+                    <div class="card-body">
+                        <h5 class="card-title">Ishan</h5>
+                        <p class="card-text">Support Specialist</p>
+                        <a href="#" class="btn btn-primary">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container mt-5">
+        <h2 class="text-center">Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>"WebDev Academy is amazing! The courses are very detailed and easy to follow."</p>
+                </div>
+                <div class="carousel-item">
+                    <p>"I learned so much and now I can build my own websites. Thank you, WebDev Academy!"</p>
+                </div>
+                <div class="carousel-item">
+                    <p>"The instructors are very knowledgeable and helpful. Highly recommend!"</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <a href="#" class="btn btn-primary btn-sm">
